@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slowReveal {
+  to {
+    opacity: 0;
+  }
+}
+
+.animate-reveal {
+  animation: slowReveal 12s ease forwards;
+}
