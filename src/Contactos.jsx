@@ -5,7 +5,7 @@ export default function Contactos() {
     <section className="w-full flex flex-col items-center gap-12">
       {/* ===== Título ===== */}
       <h2 className="text-3xl font-semibold text-center text-gray-900">
-        Contactos
+        Contacto
       </h2>
 
       {/* ===== Intro / Párrafo ===== */}
@@ -22,13 +22,12 @@ export default function Contactos() {
 
         <Blockquote>
           <p className="text-xl font-medium text-gray-900">
-            No dudes en consultarnos. Podés escribirnos por correo electrónico o
-            por WhatsApp para despejar dudas y coordinar una visita. Una vez
-            evaluado el trabajo, los presupuestos se entregan dentro de las{" "}
+            No dudes en contactarme por WhatsApp para consultar lo que necesites.
+            Si me enviás fotos del interior/tapizado, puedo orientarte mejor y
+            pasarte un presupuesto. Los presupuestos se entregan dentro de{" "}
             <strong>24 a 48 horas</strong>.
             <span className="block mt-2 text-base text-gray-600">
-              Debajo encontrarás las distintas formas de comunicación para
-              contactarnos.
+              Debajo encontrás el botón directo para escribirme.
             </span>
           </p>
         </Blockquote>
@@ -36,7 +35,7 @@ export default function Contactos() {
 
       {/* ===== Bloque de contacto ===== */}
       <div className="grid w-full max-w-4xl grid-cols-1 gap-6 md:grid-cols-3">
-        <Card className="text-center">
+        <Card className="text-center md:col-start-2">
           <h3 className="text-lg font-semibold text-gray-900">Gabriel</h3>
           <p className="mb-4 text-gray-600">Contacto por WhatsApp</p>
           <Button
@@ -44,37 +43,9 @@ export default function Contactos() {
             as="a"
             href="https://wa.me/5491131889692"
             target="_blank"
+            rel="noreferrer"
           >
             11 3188 9692
-          </Button>
-        </Card>
-
-        <Card className="text-center">
-          <h3 className="text-lg font-semibold text-gray-900">Alejandro</h3>
-          <p className="mb-4 text-gray-600">Contacto por WhatsApp</p>
-          <Button
-            color="dark"
-            as="a"
-            href="https://wa.me/5491140979031"
-            target="_blank"
-          >
-            11 4097 9031
-          </Button>
-        </Card>
-
-        <Card className="text-center">
-          <h3 className="text-lg font-semibold text-gray-900">
-            Correo electrónico
-          </h3>
-          <p className="mb-4 text-gray-600">
-            Respondemos consultas por mail
-          </p>
-          <Button
-            color="dark"
-            as="a"
-            href="mailto:concreto.info.ar@gmail.com"
-          >
-            concreto.info.ar@gmail.com
           </Button>
         </Card>
       </div>

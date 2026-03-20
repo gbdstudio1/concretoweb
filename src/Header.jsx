@@ -8,10 +8,10 @@ import {
 
 export default function Header() {
   return (
-    <Navbar fluid rounded className="bg-gray-800">
+    <Navbar fluid rounded className="bg-teal-600">
       <NavbarBrand href="#inicio">
         <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
-          Servicio de obras integrales
+          Servicio de limpieza 
         </span>
       </NavbarBrand>
 

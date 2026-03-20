@@ -1,23 +1,13 @@
-import concreto1 from "./imagenes/concreto1.jpg";
+import logo from "./imagenes/logo.png";
 
 export default function HeroImage() {
   return (
-    <div className="relative h-56 sm:h-64 xl:h-80 2xl:h-96 w-full overflow-hidden">
-      
-      {/* Imagen base */}
+    <div className="w-full bg-black flex justify-center">
       <img
-        src={concreto1}
-        alt="Concreto"
-        className="absolute inset-0 h-full w-full object-cover"
+        src={logo}
+        alt="GBD Limpieza Total"
+        className="w-full max-w-5xl h-auto block px-6 py-6"
       />
-
-      {/* Franjas que revelan */}
-<div className="absolute inset-0 flex flex-col">
-  <span className="flex-1 bg-gray-900 animate-reveal" />
-  <span className="flex-1 bg-gray-800 animate-reveal delay-[1200ms]" />
-  <span className="flex-1 bg-gray-800 animate-reveal delay-[2400ms]" />
-</div>
-
-</div>
+    </div>
   );
 }
